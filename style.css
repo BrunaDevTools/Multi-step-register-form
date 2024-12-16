@@ -1,0 +1,143 @@
+:root{
+    --violeta-claro: #845EEE;
+    --bg-input-clicked: #652CD1;
+    --bg-box-register: #212936;
+    --bg-input: #4D5562;
+    --color-input: #A1A1A9;
+    --color-font: #E5E7EB;
+    --gris-claro: #A1A1A9;
+    --gris-oscuro: #394150;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(to right, #442284 0%,  #212936  100%, #4f259f  50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-box {
+    border: solid 1.3px var(--gris-claro);
+    background-color: var(--bg-box-register);
+    color: var(--color-font);
+    padding: 30px;
+    width: 80%;
+    height: 45%;
+    max-width: 390px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.register-box .tittle h1 {
+    margin-top: 5px;
+    font-family: "Inter", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.user {
+    width: 100%;
+}
+
+.user form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    font-family: "Inter", sans-serif;
+}
+
+.user form label {
+    color: var(--gris-claro);
+    font-size: 0.75rem;
+    letter-spacing: 0.3px;
+}
+
+.user form input {
+    font-family: "Inter", sans-serif;
+    font-size: 0.75rem;
+    padding: 10px;
+    background-color: var(--bg-box-register);
+    border: 1px solid var(--color-input);
+    border-radius: 8px;
+    color: var(--color-font);
+    outline: none;
+}
+
+.user form input:focus {
+    border-color: var(--violeta-claro);
+    border-width: 3px;
+    font-size: 0.875rem;
+}
+
+.user form .name-form, .email-form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.btn-continue {
+    align-self: center;
+    background-color: var(--violeta-claro);
+    border: none;
+    padding: 10px 27px;
+    border-radius: 20px;
+    color: var(--color-font);
+    font-family: "Inter", sans-serif;
+    font-size: 0.75rem;
+    cursor: pointer;
+}
+
+.step-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 20px;
+    font-family: "Inter", sans-serif;
+    color: var(--bg-input);
+    font-size: 0.75rem;
+}
+
+.step-container .step-indicator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.step-container .step-indicator .step {
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background-color: var(--bg-input);
+    margin: 0 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px; 
+}
+
+.step-container .step-indicator .active { 
+    background-color: var(--violeta-claro); 
+    box-shadow: 0 0 2px 4px rgba(182, 182, 182, 0.199);
+}
