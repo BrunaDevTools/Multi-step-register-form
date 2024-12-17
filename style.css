@@ -149,7 +149,7 @@ body {
 
 /* Step Two. Topics */
 
-.step-one {
+.hidden {
     display: none;
 }
 
@@ -181,10 +181,6 @@ body {
 }
 
 /* Step Three. Summary */
-
-.step-two {
-    display: none;
-}
 
 .info-summary {
     height: 100%;
