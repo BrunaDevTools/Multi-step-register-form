@@ -39,7 +39,7 @@ body {
     border: solid 1.3px var(--gris-claro);
     background-color: var(--bg-box-register);
     color: var(--color-font);
-    padding: 30px;
+    padding: 30px 30px 10px 30px;
     width: 80%;
     height: 45%;
     max-width: 390px;
@@ -99,9 +99,13 @@ body {
     gap: 5px;
     margin-bottom: 10px;
 }
+.step-one .btn-continue-one {
+    margin-bottom: 20px;
+}
 
 .btn-continue {
     align-self: center;
+    margin: 10px 0 3px;
     background-color: var(--violeta-claro);
     border: none;
     padding: 10px 27px;
@@ -148,6 +152,19 @@ body {
 
 
 /* Step Two. Topics */
+
+.register-box .btn-back {
+    border: none;
+    background: none;
+    align-self: center;
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: var(--bg-input);
+    cursor: pointer;
+}
+.register-box .btn-back:hover{
+    border-bottom: 1px solid var(--bg-input);
+}
 
 .hidden {
     display: none;
@@ -200,4 +217,14 @@ body {
 .summary ul {
     margin-top: 20px;
 }
+
+.summary ul li {
+    margin-top: 5px;
+    margin-left: 55px;
+}
+
+.summary-value {
+    color: var(--color-font);
+}
+
 
